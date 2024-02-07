@@ -124,7 +124,7 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 375px) {
 
 
 
@@ -163,3 +163,88 @@ body{
     }
   }
   
+
+  @media screen and (min-width: 360px) {
+
+
+
+    .card{
+        width: 90%;
+        max-width: 470px;
+        background: linear-gradient(to right,hsla(0, 98%, 48%, 0.836),#02005e);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .search  input{
+
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555555;
+        padding: 5px 20px;
+        height: 35px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+  }
+
+
+  
+  @media screen and (min-width:280px) {
+
+
+
+    .card{
+        width: 90%;
+        max-width: 470px;
+        background: linear-gradient(to right,hsla(0, 98%, 48%, 0.836),#02005e);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .search  input{
+
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555555;
+        padding: 5px 5px;
+        height: 25px;
+        border-radius: 20px;
+        flex: 1;
+        margin-right: 5px;
+        font-size: 10px;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .search button img{
+        width: 8px;
+    }
+
+  }
