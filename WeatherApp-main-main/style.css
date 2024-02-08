@@ -1,122 +1,250 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif ;
     box-sizing: border-box;
 }
 
-body {
+
+
+body{
     background-image: url('images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+   
 }
 
-.card {
+
+.card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(to right, hsla(0, 98%, 48%, 0.836), #02005e);
+    background: linear-gradient(to right,hsla(0, 98%, 48%, 0.836),#02005e);
     color: #fff;
-    margin: 10% auto 0; /* Adjusted margin for better responsiveness */
+    margin: 100px auto 0;
     border-radius: 20px;
-    padding: 5vw 7.5vw; /* Adjusted padding using viewport width units */
+    padding: 20px 35px;
     text-align: center;
 }
 
-.search {
-    width: 90%;
-    max-width: 470px;
-    margin: 5% auto;
+.search{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.search input {
+.search  input{
+
     border: 0;
     outline: 0;
     background: #ebfffc;
     color: #555555;
-    padding: 2.5vw 7.5vw; /* Adjusted padding using viewport width units */
-    height: 12vw; /* Adjusted height using viewport width units */
-    border-radius: 7.5vw; /* Adjusted border-radius using viewport width units */
+    padding: 5px 15px;
+    height: 60px;
+    border-radius: 30px;
     flex: 1;
-    margin-right: 5vw; /* Adjusted margin using viewport width units */
-    font-size: 4vw; /* Adjusted font size using viewport width units */
+    margin-right: 16px;
+    font-size: 18px;
 }
 
-.search button {
+.search button{
     border: 0;
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 12vw; /* Adjusted width using viewport width units */
-    height: 12vw; /* Adjusted height using viewport width units */
+    width: 60px;
+    height: 60px;
     cursor: pointer;
 }
 
-.search button img {
-    width: 3.2vw; /* Adjusted width using viewport width units */
+
+
+.search button img{
+    width: 16px;
 }
 
-.weather-icon {
-    width: 38vw; /* Adjusted width using viewport width units */
-    margin-top: 6vw; /* Adjusted margin using viewport width units */
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
 }
 
-.weather h1 {
-    font-size: 12vw; /* Adjusted font size using viewport width units */
+.weather h1{
+    font-size: 80px;
     font-family: 500;
 }
 
-.weather h2 {
-    font-size: 6.8vw; /* Adjusted font size using viewport width units */
+.weather h2{
+    font-size: 45px;
     font-family: 400;
-    margin-top: -1vw; /* Adjusted margin using viewport width units */
+    margin-top: -10px;
 }
 
-.details {
+.details{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw; /* Adjusted padding using viewport width units */
-    margin-top: 10vw; /* Adjusted margin using viewport width units */
+    padding: 0 20px;
+    margin-top: 50px;
 }
 
-.col {
+.col{
+
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.col img {
-    width: 3vw; /* Adjusted width using viewport width units */
-    margin-right: 1vw; /* Adjusted margin using viewport width units */
+.col img{
+    width: 30px;
+    margin-right: 10px;
 }
 
-.humidity,
-.wind {
-    font-size: 2vw; /* Adjusted font size using viewport width units */
-    margin-top: -0.6vw; /* Adjusted margin using viewport width units */
+.humidity, .wind{
+    font-size: 20px;
+    margin-top: -6px;
     font-family: 'Roboto', sans-serif;
+  
 }
+.humidp, .winp{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;}
 
-.humidp,
-.winp {
-    font-size: 1.5vw; /* Adjusted font size using viewport width units */
-    margin-top: 2vw; /* Adjusted margin using viewport width units */
-    font-family: 'Roboto', sans-serif;
-}
-
-.weather {
+.weather{
     display: none;
 }
 
-.error {
+.error{
     text-align: left;
-    margin-left: 1vw; /* Adjusted margin using viewport width units */
-    font-size: 1.4vw; /* Adjusted font size using viewport width units */
-    margin-top: 2vw; /* Adjusted margin using viewport width units */
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
     display: none;
 }
+
+@media screen and (min-width: 375px) {
+
+
+
+    .card{
+        width: 90%;
+        max-width: 470px;
+        background: linear-gradient(to right,hsla(0, 98%, 48%, 0.836),#02005e);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .search  input{
+
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555555;
+        padding: 5px 20px;
+        height: 35px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+  }
+  
+
+  @media screen and (min-width: 360px) {
+
+
+
+    .card{
+        width: 90%;
+        max-width: 470px;
+        background: linear-gradient(to right,hsla(0, 98%, 48%, 0.836),#02005e);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .search  input{
+
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555555;
+        padding: 5px 20px;
+        height: 35px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+  }
+
+
+  
+  @media screen and (min-width:280px) {
+
+
+
+    .card{
+        width: 50vw ;
+        max-width: 470px;
+        background: linear-gradient(to right,hsla(0, 98%, 48%, 0.836),#02005e);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .search  input{
+
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555555;
+        padding: 5px 5px;
+        height: 25px;
+        border-radius: 20px;
+        flex: 1;
+        margin-right: 5px;
+        font-size: 10px;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .search button img{
+        width: 8px;
+    }
+
+  }
